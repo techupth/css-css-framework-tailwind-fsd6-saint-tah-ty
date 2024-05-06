@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body class="box-border m-0">
+    <!-- Start coding here -->
+    <section class="h-screen bg-slate-200 flex justify-center items-center">
+      <div
+        class="w-1/4 h-72 bg-white rounded-xl p-8 flex flex-col justify-between"
+      >
+        <h3 class="text-xl text-zinc-600">Login to website</h3>
+        <div class="flex justify-between items-end">
+          <label class="font-normal text-lg" for="email">Email</label>
+          <input
+            class="border-solid border-2 outline-none rounded-sm border-zinc-600 p-2 hover:border-violet-500 focus:border-violet-300"
+            type="text"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="flex justify-between items-end">
+          <label class="font-normal text-lg" for="password ">Password</label>
+          <input
+            class="border-solid border-2 outline-none rounded-sm border-zinc-600 p-2 hover:border-violet-500 focus:border-violet-300"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+        <div class="flex justify-between">
+          <button
+            class="w-36 p-2 rounded-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:ring-2 focus:ring-violet-300"
+          >
+            Sign in
+          </button>
+          <button
+            class="w-36 p-2 rounded-full bg-white text-violet-500 hover:bg-violet-100 focus:ring-2 focus:ring-violet-300"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

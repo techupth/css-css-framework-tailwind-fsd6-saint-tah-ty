@@ -10,7 +10,23 @@
 </head>
 
 <body>
-  <!-- Start coding here -->
+ <div class="Webpage w-screen h-screen bg-slate-200 flex flex-col justify-center items-center">
+  <div class="Form w-fit p-7 bg-white rounded-xl flex flex-col justify-center items-center gap-5">
+    <p class="text-zinc-600 text-xl w-full">Login to Website</p>
+    <div class="input-section flex flex-row items-center" >
+    <label for="email" class="font-bold mr-12 ">Email</label>
+    <input id="email" type="email" class="Inputs rounded-md border border-zinc-600 p-2 hover:border-violet-500 focus:outline-none focus:border-violet-300"></input>
+  </div>
+    <div class="input-section flex flex-row items-center">
+    <label for="password" class="font-bold mr-5">Password</label>
+    <input id="password" type="password" class="Inputs rounded-md border border-zinc-600 p-2 hover:border-violet-500 focus:outline-none focus:border-violet-300"></input>
+  </div>
+    <div class="buttons-section">
+    <button class="w-36 p-2 rounded-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:ring focus:ring-violet-300">Sign In</button>
+    <button class="w-36 p-2 rounded-full bg-white text-violet-600 hover:text-violet-100 focus:ring focus:ring-violet-300 focus:text-violet-600">Sign Up</button>
+  </div>
+  </div>
+  </div>
 </body>
 
 </html>

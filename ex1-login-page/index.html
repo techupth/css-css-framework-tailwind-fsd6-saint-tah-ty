@@ -11,8 +11,10 @@
   <body class="box-border m-0">
     <!-- Start coding here -->
     <section class="h-screen bg-slate-200 flex justify-center items-center">
-      <div
+      <form
         class="w-1/4 h-72 bg-white rounded-xl p-8 flex flex-col justify-between"
+        action="/login"
+        method="post"
       >
         <h3 class="text-xl text-zinc-600">Login to website</h3>
         <div class="flex justify-between items-end">
@@ -26,7 +28,7 @@
           />
         </div>
         <div class="flex justify-between items-end">
-          <label class="font-normal text-lg" for="password ">Password</label>
+          <label class="font-normal text-lg" for="password">Password</label>
           <input
             class="border-solid border-2 outline-none rounded-sm border-zinc-600 p-2 hover:border-violet-500 focus:border-violet-300"
             type="password"
@@ -38,6 +40,7 @@
         <div class="flex justify-between">
           <button
             class="w-36 p-2 rounded-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:ring-2 focus:ring-violet-300"
+            type="submit"
           >
             Sign in
           </button>
@@ -47,7 +50,8 @@
             Sign Up
           </button>
         </div>
-      </div>
+      </form>
     </section>
   </body>
 </html>
+gi
